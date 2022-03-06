@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Pastelero</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            background:rgb(253, 230, 234);
+        }
+
+        .nav-principal{
+            background-color: rgb(92, 92, 92);
+            overflow: auto;
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo img{
+            position: absolute;
+            margin-top: auto;
+            margin-left: 10px;
+            width: 80px;
+        }
+
+        .nav-principal a{
+            display:block;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: lighter;
+            font-family: Arial;
+            padding: 30px;
+            float: right;  
+         }
+
+         .nav-principal a:hover{
+            background-color: var(--primario);
+            color: rgb(236, 152, 236);
+         }
+
+         table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+            tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="nav-background">
+        <nav class="nav-principal">
+            <a href="#">Contacto</a>            
+            <a href=./pedido_cliente.html">Personaliza</a>
+            <a href="#">Galería</a>
+            <a href="./pedido_pastelero.html">Pastelero</a>
+            <a href="./index.html">Inicio</a>
+        </nav>
+    </div>
+    <br>
+    <br>
+
+    <h2>Tabla de inventario</h2>
+
+    <table>
+        <tr>
+          <th>Ingrediente</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td>Chocolate Blanco</td>
+          <td>60 liros</td>
+        </tr>
+        <tr>
+          <td>Chocolate Negro</td>
+          <td>90 litros</td>
+        </tr>
+        <tr>
+          <td>Fresas</td>
+          <td>20 kilos</td>
+        </tr>
+        <tr>
+            <td>Durazno</td>
+            <td>25 kilos</td>
+          </tr>
+          <tr>
+            <td>Nuéz</td>
+            <td>30 kilos</td>
+          </tr>
+
+        
+      </table>
+
+    <h2>Tabla de pedido</h2>
+
+    <table>
+    <tr>
+        <th>Cliente</th>
+        <th>Pedido</th>
+        <th>Fecha Entrega</th>
+    </tr>
+    <tr>
+        <td>Juan Lopez</td>
+        <td>Pastel 1</td>
+        <td> Abril 5 2022</td>
+    </tr>
+    <tr>
+        <td>Jorge Perez</td>
+        <td>Pastel 2</td>
+        <td>Marzo 20 2022</td>
+    </tr>
+    <tr>
+        <td>Luis Gomez</td>
+        <td>Pastel 3</td>
+        <td>Marzo 19 2022</td>
+    </tr>
+    <tr>
+    </table>
+
+
+   
+
+
+</body>
+</html>
