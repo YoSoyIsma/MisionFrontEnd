@@ -1,0 +1,476 @@
+@import url('./Get-Bootstrap.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@font-face {
+  font-family: 'Avenir';
+  src: url("./../fonts/Avenir-LT-Std-95-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Neometric';
+  src: url("./../fonts/Neometric-Alt-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Neometric Extra Light';
+  src: url("./../fonts/Neometric-Light.woff") format('woff');
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("./../fonts/SF-Pro-Display-Bold.ttf");
+}
+@font-face {
+  font-family: 'Aceh Light';
+  src: url("./../fonts/Aceh-Light.ttf");
+}
+
+.navbar{
+  background: linear-gradient(to right,  #fff 0%,#fff 49%,#e7f2fc 51%,#e7f2fc 100%);
+  height: 13vh;
+  padding: 0 10vh;
+}
+.navbar-nav{
+  position: absolute;
+  right: 13.5vh;
+}
+.navbar-brand{
+  color: rgb(43, 75, 201);
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Avenir';
+}
+.navbar .navbar-nav .nav-item .nav-link{
+  color: rgb(109, 123, 147);
+  margin: 0 3.5vh;
+  font-family: 'Neometric';
+  font-size: 1rem;
+}
+.navbar-nav .active{
+  background: rgb(55, 87, 213);
+  color: #fff !important;
+}
+
+.triangle1 {
+  width:0;
+  border-bottom:100px solid rgba(0,0,0,.03); 
+  border-left:120px solid white; 
+  border-right:0px solid white;
+}
+.triangle2 {
+  width:0;
+  border-top:100px solid rgba(0,0,0,.03); 
+  border-left:120px solid white; 
+  border-right:0px solid white;
+}
+.hero-triangle-left{
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+}
+.hero-triangle-top{
+  position: absolute;
+  left: 10vh;
+  top: 7vh;
+  transform: rotate(-90deg);
+}
+.hero-triangle-top .triangle1 {
+  width:0;
+  border-bottom:80px solid rgba(0,0,0,.03); 
+  border-left:80px solid white; 
+  border-right:0px solid white;
+}
+.hero-triangle-top .triangle2 {
+  width:0;
+  border-top:80px solid rgba(0,0,0,.03); 
+  border-left:80px solid white; 
+  border-right:0px solid white;
+}
+.should-vaccine-triangle{
+  position: absolute;
+  top: 165vh;
+  right: 0;
+}
+.should-vaccine-triangle>hr,
+.emergency-contact-triangle>hr{
+  width: 88vh;
+  height: 2px;
+  margin: 1px -70vh;
+  padding: 0;
+  background: rgba(0,0,0,.1); 
+}
+
+.vaccine-icon{
+    height: 10vh;
+}
+.hero{
+  width: 100%;
+  height: 120vh;
+}
+.hero .hero-left{
+  width: 50%;
+  height: 100%;
+  padding: 15vh;
+  position: absolute;
+}
+.hero .hero-left h1{
+  font-family: 'SF Pro Display';
+  color: rgb(31, 62, 114);
+  font-size: 3rem;
+  font-weight: 900;
+}
+.hero .hero-left .hero-information>p{
+  color: rgb(109, 123, 147);
+  font-family: 'Aceh Light';
+  font-size: 1rem;
+  font-weight: 900;
+  width: 85%;
+}
+.hero .hero-left .hero-information i{
+  color: rgb(255, 208, 18);
+  background: rgba(255, 208, 18, .1);
+  padding: 1.2vh;
+  border-radius: 30%;
+}
+.hero .hero-left .hero-information .row .col>p{
+  color: rgb(31, 62, 114);
+  font-family: 'Aceh Light';
+  font-weight: 800;
+}
+.hero .hero-left>p{
+  margin-top: 30vh;
+  color: rgb(31, 62, 114);
+  font-family: 'Avenir';
+}
+.hero .hero-left>p>i,
+.hero .hero-righ .geographic-information i{
+  background: rgba(42, 74, 200,.1);
+  color: rgb(42, 74, 200);
+  padding: 1.2vh 1.5vh;
+  border: 2px solid rgb(245, 249, 255);
+  border-radius: 30%;
+}
+
+.hero .hero-righ{
+  position: absolute;
+  right: 0px;
+  top: 13vh;
+  width: 50%;
+  height: 120vh;
+  background: url(./../img/front-view-female-nurse-white-medical-suit-with-red-mask-injection-her-hands-blue.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero .hero-righ .geographic-information{
+  background: rgba(255, 255, 255, .95);
+  border: 5px solid white;
+  border-radius: 10px;
+  padding-top: 5vh;
+  padding-left: 6vh;
+  position: absolute;
+  bottom: 8vh;
+  left: -80vh;
+  width: 125vh;
+  box-shadow: 10px 10px 10px 10px rgba(42, 74, 200,.08);
+}
+.hero .hero-righ .geographic-information p{
+  font-family: 'Neometric Extra Light';
+  font-weight: 900;
+  font-size: 1rem;
+  color: rgb(109, 123, 147);
+}
+.hero .hero-righ .geographic-information .data{
+  padding-left: 6.5vh;
+  color: rgb(31, 62, 114);
+  font-family: 'Avenir';
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.hero .hero-righ .geographic-information button{
+  background: rgb(55, 87, 213);
+  color: #fff !important;
+  width: 23vh;
+  height: 8vh;
+}
+
+.vaccine-brands{
+  padding: 18vh;
+}
+.vaccine-brands .row{
+  margin: 0 auto;
+}
+.vaccine-brands #Moderna{
+  margin-left: -15vh;
+}
+.vaccine-brands #Pfizer{
+  margin-left: -10vh;
+}
+
+.should-vaccine{
+  padding: 0 15vh 15vh 15vh;
+}
+.should-vaccine h2{
+  font-family: 'SF Pro Display';
+  color: rgb(31, 62, 114);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.should-vaccine>p{
+  color: rgb(109, 123, 147);
+  font-family: 'Aceh Light';
+  font-size: 1rem;
+  font-weight: 900;
+  width: 35%;
+  margin-top: 5vh;
+}
+.should-vaccine .row .col .card{
+  width: 35vh;
+  height: 40vh;
+  padding: 5vh;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0, .05);
+}
+.should-vaccine .row .col .card:hover{
+  transform: scale(1.2);
+  box-shadow: 10px 10px 10px 10px rgba(55, 87, 213, .06);
+}
+.should-vaccine .row .col .card .card-img-top>i,
+.should-vaccine .row .col .card .card-img-top>span{
+  background: rgb(237, 241, 255);
+  color: rgb(45, 77, 203) ;
+  padding: 1.2vh 1.5vh;
+  border: 2px solid rgb(252, 253, 255);
+  border-radius: 10px;
+}
+.should-vaccine .row .col .card .card-img-top>span{
+  padding: 1vh .3vh 1vh 1vh;
+}
+.should-vaccine .row .col .card .card-body{
+  padding: 5vh 0;
+  margin: 0;
+  font-family: 'Aceh Light';
+}
+.should-vaccine .row .col .card .card-body .card-title{
+  font-size: 1.3rem;
+  color: rgb(31, 62, 114);
+  font-weight: 900;
+}
+.should-vaccine .row .col .card .card-body .card-text{
+  font-size: .8rem;
+  color: rgb(109, 123, 147);
+  font-weight: 800;
+}
+
+.before-vaccine{
+  width: 100%;
+  height: 100vh;
+}
+.before-vaccine .panel-left{
+  background: rgb(8,153,255);
+  background: linear-gradient(90deg, rgba(8,153,255,1) 0%, rgba(42,112,221,1) 50%);
+  width: 45%;
+  height: 100%;
+}
+.before-vaccine .panel-left .panel-color{
+  background: white;
+  height: 29%;
+}
+.before-vaccine .panel-left .panel-color>img{
+  position: absolute;
+  top: 257.8vh;
+  left: -30vh;
+  height: 100%;
+}
+.before-vaccine .panel-right{
+  width: 55%;
+  position: absolute;
+  right: 0;
+  top: 257.9vh;
+  padding: 0px 15vh 0px 8vh;
+}
+.before-vaccine .panel-right h2{
+  font-family: 'SF Pro Display';
+  color: rgb(31, 62, 114);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.before-vaccine .panel-right > p{
+  width: 73.5%;
+  color: rgb(109, 123, 147);
+  font-size: 1rem;
+  font-family: 'Aceh Light';
+  font-weight: 800;
+}
+.before-vaccine .panel-right .accordion{
+  margin-top: 7vh;
+}
+.before-vaccine .panel-right .accordion .accordion-item{
+  border: 2px solid rgba(0, 0, 0,.02) ;
+  margin-top: 3.5vh;
+  border-radius: 10px;
+}
+.before-vaccine .panel-right .accordion .accordion-item .accordion-button{
+  border-radius: 10px;
+  width: 100%;
+}
+.before-vaccine .panel-right .accordion i{
+  background: rgb(237, 241, 255);
+  color: rgb(45, 77, 203) ;
+  padding: 1.2vh 1.5vh;
+  border: 2px solid rgb(252, 253, 255);
+  border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  position: absolute;
+  right: 5vh;
+  border:1px solid rgb(252, 253, 255);
+  border-radius: 5px;
+  background: rgb(237, 241, 255);
+  color: rgb(45, 77, 203) ;
+  padding: 2vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+  text-align: center;
+}
+.accordion-button::after {
+  position: absolute;
+  right: 5vh;
+  border: 1.5px solid rgb(252, 253, 255);
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 5vh;
+  content: "";
+  background: rgb(237, 241, 255);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  color: rgb(45, 77, 203) ;
+  transition: transform 0.2s ease-in-out;
+  padding: 2vh;
+  text-align: center;
+}
+
+.emergency-contact{
+  width: 100%;
+  height: 100vh;
+  margin-top: 15vh;
+}
+.emergency-contact .panel-left{
+  padding: 5vh 14vh;
+  width: 50%;
+  height: 100%;
+}
+.emergency-contact .panel-left > h2{
+  font-family: 'SF Pro Display';
+  color: rgb(31, 62, 114);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.emergency-contact .panel-left > p{
+  margin-top: 5vh;
+  margin-bottom: 12vh;
+  width: 90%;
+  color: rgb(109, 123, 147);
+  font-size: 1rem;
+  font-family: 'Aceh Light';
+  font-weight: 800;
+}
+.emergency-contact .panel-left .col{
+  padding: 2vh;
+}
+.emergency-contact .panel-left .card{
+  height: 25vh;
+  border: 1px solid rgba(170, 183, 236,.1);;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(31, 62, 114, .05);
+}
+.emergency-contact .panel-left .card i{
+  background: rgb(241, 245, 255);
+  color: rgb(45, 77, 203);
+  padding: 1.2vh;
+  border: 1.5px solid rgb(252, 253, 255);
+  border-radius: 15px;
+}
+.emergency-contact .panel-left .card a{
+  background: rgba(170, 183, 236,.25);
+  color: rgb(52, 84, 210);
+  font-family: 'SF Pro Display';
+  width: 80%;
+  margin: 2vh 3vh;
+}
+.emergency-contact .panel-left .card a:hover{
+  background: rgb(52, 84, 210);
+  color: white;
+}
+.emergency-contact .panel-left .card .card-body h5{
+  margin-top: -4vh;
+  padding-left: 10vh;
+}
+.emergency-contact .panel-left .card .card-body p{
+  font-size: .8rem;
+  padding-left: 10vh;
+}
+.emergency-contact .panel-right{
+  background: rgb(8,153,255);
+  background: linear-gradient(90deg, rgba(8,153,255,1) 0%, rgba(42,112,221,1) 50%);
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  margin-top: -100vh;
+}
+.emergency-contact .panel-right .panel-color{
+  background: white;
+  height: 38%;
+}
+.emergency-contact .panel-right .panel-color>img{
+  height: 80%;
+  position: absolute;
+  right: 0vh;
+  bottom: 0;
+}
+footer{
+  margin-top: 20vh;
+  background: rgb(238, 243, 255);
+  padding: 8vh 15vh 2vh 15vh;
+  height: 50vh;
+}
+footer .row .col > .row .col h3{
+  color: rgb(43, 73, 122);
+  font-family: 'Neometric';
+  font-size: 1.2rem;
+}
+footer .row .col > p{
+  width: 35%;
+  color: rgb(109, 123, 147);
+  font-size: .78rem;
+  font-family: 'Neometric';
+  font-weight: 100;
+  line-height: 25px;
+}
+#brand{
+  color: rgb(43, 75, 201);
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Avenir';
+}
+footer .row .col > .row .col ul li,
+footer .row .col > .row .col ul li a{
+  text-decoration: none;
+  list-style: none;
+  margin-top: 2.5vh;
+  margin-left: -2.5vh;
+  color: rgb(122, 135, 158);
+  font-family: 'Neometric';
+  font-weight: 100;
+  font-size: .78rem;
+}
+footer .legality,
+footer .legality a{
+  text-decoration: none;
+  margin-top: 15vh;
+  color: rgb(122, 135, 158);
+  font-family: 'Neometric';
+  font-weight: 100;
+  font-size: .78rem;
+}
